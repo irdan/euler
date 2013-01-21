@@ -1,7 +1,7 @@
-document.writeln("Outside of the base");
-document.writeln("In the base, killing your dudes");
+console.log("Outside of the base");
+console.log("In the base, killing your dudes");
 function sum_even_fibonacci(max) {
-	document.writeln("max is " + max);
+	console.log("max is " + max);
 	var total = 0;
 	var p = (1+Math.sqrt(5))/2;
 	var v = (1-Math.sqrt(5))/2;
@@ -11,12 +11,12 @@ function sum_even_fibonacci(max) {
 		if (fib > 4000000) {
 			break;
 		}	
-	//	document.writeln("fib " + n + " is "+ fib);
+	//	console.log("fib " + n + " is "+ fib);
 		total+= fib;
 	}
 	return total;
 }
 var total = sum_even_fibonacci(4000000);
-document.writeln(total);
+console.log(total);
 
 
